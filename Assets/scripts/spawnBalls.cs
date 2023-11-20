@@ -7,7 +7,7 @@ public class spawnBalls : MonoBehaviour
     
     
 
-    [SerializeField] private float speed = 20f;
+    [SerializeField] private float speed = 10f;
     
 
 
@@ -15,7 +15,7 @@ public class spawnBalls : MonoBehaviour
     {
         
 
-        transform.Translate(Vector3.forward * speed * Time.deltaTime);
+        transform.Translate(Vector3.up * speed * Time.deltaTime);
 
     }
 

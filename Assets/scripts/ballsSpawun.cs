@@ -7,8 +7,8 @@ public class ballsSpawun : MonoBehaviour
     [SerializeField] private GameObject[] ballPrefabArray;
 
     private int ballIndex;
-    private float spawnRangex = 0f;
-    private float spawnPosy = 20f;
+    private float spawnRangex = 25f;
+    private float spawnPosy = 25f;
 
     [SerializeField] private float startDelay = 2f;
     [SerializeField] private float spaunInterval = 1.5f;
@@ -31,7 +31,7 @@ public class ballsSpawun : MonoBehaviour
         ballIndex = Random.Range(0, ballPrefabArray.Length);
         Instantiate(ballPrefabArray[ballIndex],
          RandomSpawnPos(),
-         Quaternion.Euler(x: 0, y: 180, z: 0));
+         Quaternion.Euler(x: 0, y: 0, z: 0));
     }
 
     private Vector3 RandomSpawnPos()
